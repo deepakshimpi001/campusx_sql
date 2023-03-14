@@ -2,7 +2,7 @@
 select * from campusx.insurance
 where gender='male' and region='southwest';
 
-##2]Show all records having bmi in range 30 to 45 both inclusive.
+##2]Show all records having bmi in range 30 to 45 both inclusive...
 
 select * from campusx.insurance
 where bmi between 30 and 45;
