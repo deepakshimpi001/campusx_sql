@@ -9,10 +9,10 @@ where bmi between 30 and 45;
 
 ##3]Show minimum and maximum bloodpressure of diabetic patient who smokes. Make column names as MinBP and MaxBP respectively.
 select min(bloodpressure) as MinBP,max(bloodpressure) as MaxBP from campusx.insurance
-where smoker='yes';
+where smoker='yes' and diabetic='yes';
 
 ##4]Find no of unique patients who are not from southwest region
-select distinct PatientID from campusx.insurance
+select count(distinct (PatientID)) from campusx.insurance
 where region!='southwest';
 
 ##5]Total claim amount from male smoker
